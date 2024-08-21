@@ -1,0 +1,44 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject1;
+
+/**
+ *
+ * @author aluno.den
+ */
+
+import java.util.Scanner;
+
+public class Atividade3 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        
+        int contaPares = 0;
+        int contaImpares = 0;
+        int numero;
+        
+        while (true) {
+            System.out.print("Digite um número inteiro e positivo ou um número negativo para encerrar:");
+            numero = sc.nextInt();
+            
+            if (numero < 0) {
+                break;
+            }
+            
+            if (numero % 2 == 0) {
+                contaPares++;
+            } else {
+                contaImpares++;
+            }
+        }
+        
+        System.out.println("Total de números pares: " + contaPares);
+        System.out.println("Total de números ímpares: " + contaImpares);
+        
+    }
+}
+
